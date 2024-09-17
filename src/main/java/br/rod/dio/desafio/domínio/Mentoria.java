@@ -5,8 +5,10 @@ import java.time.LocalDate;
 public class Mentoria extends Conteudo{
     private LocalDate data;
 
-    public Mentoria(LocalDate data) {
+    public Mentoria(LocalDate data,String titulo, String descricao) {
         this.data = data;
+        this.setTitulo(titulo);
+        this.setDescricao(descricao);
     }
 
     public void setData(LocalDate data) {
